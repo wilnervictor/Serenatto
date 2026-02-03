@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="src/main.js" defer></script>
+    <title>vite-serenato</title>
+  </head>
+  <body class="flex flex-col min-h-screen" id="dark__body">
+
+    <header
+      class="flex justify-between items-center py-5 px-4 md:py-4 md:px-15 2xl:px-90"
+    >
+      <div>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="src/assets/logo-mobile.png"
+          />
+          <img
+            class="md:w-56 md:h-20"
+            src="src/assets/logo-maior.png"
+            alt="incone da serenato"
+          />
+        </picture>
+      </div>
+
+      <div class="xl:hidden cursor-pointer" id="menu__bnt">
+        <img class="w-14 h-10" id="menu__white" src="src/assets/navbar-toggler.png" alt="Menu" />
+        <img class="w-5 h-5 hidden" id="menu__dark" src="src/assets/⭐️ icon.png" alt="Menu">
+      </div>
+      
+      <div class="disable cursor-pointer" id="bnt__out">
+        <img src="src/assets/close.png" alt="x de fechar">
+      </div>
+
+      <div class="hidden xl:block">
+        <ul class="flex gap-7 text-[20px] font-normal">
+          <li class=""><a class="hover-a font-normal text-cinza-medio active:text-marrom-claro" href="#">Início</a></li>
+          <li class=""><a class="hover-a font-normal text-cinza-medio active:text-marrom-claro" href="#">Sobre</a></li>
+          <li class=""><a class="hover-a font-normal text-cinza-medio active:text-marrom-claro" href="#">Contato</a></li>
+          <li class="flex items-center gap-2">
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" class="peer sr-only" id="checkbox__verification__big" />
+              <div
+                class="h-6 w-11 rounded-full bg-[#ffffff] transition-colors peer-checked:bg-amarelo border border-marrom-claro"
+              ></div>
+              <div
+                class="absolute left-2px top-2px h-5 w-5 rounded-full bg-marrom-claro transition-all peer-checked:translate-x-full"
+              ></div>
+            </label>
+            <a class="hover-a font-normal text-cinza-medio  active:text-marrom-claro" href="#">Modo noturno</a>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+
+    <section class="disable pl-3" id="menu__nav">
+      <ul class="flex flex-col gap-2">
+        <li><a class="font-normal text-cinza-medio active:text-marrom-claro" href="#">Início</a></li>
+        <li><a class="font-normal text-cinza-medio active:text-marrom-claro" href="#">Sobre</a></li>
+        <li><a class="font-normal text-cinza-medio active:text-marrom-claro" href="#">Contato</a></li>
+         <li class="flex items-center gap-2">
+            <label class="relative inline-flex items-center">
+              <input type="checkbox" id="checkbox__verification" class="peer sr-only" />
+              <div
+                class="h-6 w-11 rounded-full bg-[#ffffff] transition-colors peer-checked:bg-amarelo border border-marrom-claro"
+              ></div>
+              <div
+                class="absolute left-2px top-2px h-5 w-5 rounded-full bg-marrom-claro transition-all peer-checked:translate-x-full"
+              ></div>
+            </label>
+            <a class="font-normal text-cinza-medio  active:text-marrom-claro" href="#">Modo noturno</a>
+          </li>
+      </ul>
+    </section>
+
+    <main class="flex-1" id="desebol__main">
+      <section class="relative w-full">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="src/assets/Banner1Mobile.png"
+          />
+          <source
+            media="(max-width: 1450px)"
+            srcset="src/assets/Banner1Tablet.png"
+          />
+          <img
+            src="src/assets/banner1.png"
+            alt="banner-1"
+            class="w-full h-auto object-cover 2xl:h-204"
+          />
+        </picture>
+
+        <div class="absolute top-1/5 left-7 flex flex-col gap-4 md:gap-8 md:left-15 2xl:left-90 2xl:top-1/8">
+          <img
+            class="w-12 h-16 md:w-15 md:h-20 2xl:w-21 2xl:h-28"
+            src="src/assets/logo-nav.png"
+            alt="Logo da Serenatto"
+          />
+          <h1
+            class="font-semibold text-4xl text-amarelo w-78 md:text-[64px] md:w-124 2xl:font-normal 2xl:text-[92px] 2xl:w-180"
+          >
+            Sua pausa <br class=" md:block"> para <samp class="2xl:font-semibold">desfrutar a vida</samp>
+          </h1>
+          <p class="font-normal text-[#ffffff] w-75 md:text-[25px] md:w-118 2xl:w-120">
+            Boas-vindas ao <samp class=" md:font-bold">Bistrô Serenatto!</samp> <br class="hidden 2xl:block"/>
+            Um ambiente aconchegante e acolhedor para apreciar um bom café.
+          </p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center mb-12 ">
+        <h2 class="font-semibold text-marrom-escuro text-[28px] mt-12 mb-8 md:mb-10 xl:mb-15" >Nossos Serviços</h2>
+        <section class="flex flex-col gap-8 md:gap-10 xl:flex-row xl:gap-7.5">
+          
+          <article class="w-75 border border-marrom-claro rounded md:w-87">
+            <img src="src/assets/cafe-e-bistro.png" alt="cafe com biscoito">
+            <div class="px-6">
+              <h3 class="py-6 text-marrom-claro font-bold text-[20px]">Café & Bistrô</h3>
+              <p class="font-normal text-[16px] text-cinza-medio pb-6">Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos salgados e sobremesas. Uma excelente opção para quem busca um lugar tranquilo e aconchegante.</p>
+              <button class="block text-white font-medium bg-marrom-medio w-63 h-9.25 mb-6 mx-auto rounded md:w-75.5">Quero detalhes</button>
+            </div>
+          </article>
+          <article class="w-75 border border-marrom-claro rounded md:w-87.5">
+            <img src="src/assets/buffet.png" alt="cafe com biscoito">
+            <div class="px-6">
+              <h3 class="py-6 text-marrom-escuro font-bold text-[20px]">Buffet</h3>
+              <p class="font-normal text-[15px] text-cinza-medio pb-6">Buffet e catering personalizado para eventos, produções e celebrações. Com um menu variado e adaptável às preferências do cliente, atendimento atencioso e profissional.</p>
+              <button class="block text-white font-medium bg-marrom-medio w-63 h-9.25 mb-6 mx-auto rounded md:w-75.5">Quero detalhes</button>
+            </div>
+          </article>
+          <article class="w-75 border border-marrom-claro rounded md:w-87">
+            <img src="src/assets/delivery.png" alt="cafe com biscoito">
+            <div class="px-6">
+              <h3 class="py-6 text-marrom-escuro font-bold text-[20px]">Delivery</h3>
+              <p class="font-normal text-[15px] text-cinza-medio pb-6">Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos produtos. Com o mesmo cardápio variado de sempre, sem perder nosso sabor e padrão de qualidade.</p>
+              <button class="block text-white font-medium bg-marrom-medio w-63 h-9.25 mb-6 mx-auto rounded md:w-75.5">Quero detalhes</button>
+            </div>
+          </article>
+
+        </section>
+      </section>
+
+      <section class="w-full relative">
+         <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="src/assets/basic.png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="src/assets/basicTablet.png"
+          />
+          <img
+            src="src/assets/basicDesktop.png"
+            alt="banner-2"
+            class="w-full"
+          />
+        </picture>
+
+        <picture class="absolute top-1/6 w-full">
+          <source class="w-full" media="(max-width: 767px)" srcset="src/assets/img-overlayMobli.png">
+           <img
+            src="src/assets/img-overlayMedio.png"
+            class="w-full xl:hidden"
+          />
+        </picture>
+
+        <div class="absolute top-1/4 w-full hidden xl:top-1/6 xl:block 2xl:top-1/4">
+          <h1 class="text-[64px] text-center font-semibold text-amarelo pb-6">Portas abertas para todos os públicos.</h1>
+          <p class="font-normal text-[25px] text-white text-center">Nosso espaço é aconchegante, pet friendly, preparado para receber crianças e pessoas com deficiência <br> Também oferecemos ambiente de coworking!</p>
+        </div>
+      </section>
+
+      <section class="flex flex-col justify-center mb-10 md:mb-20 xl:mb-24 xl:items-center">
+        <h2 class="text-center mt-10 text-[28px] text-marrom-escuro font-semibold md:text-[40px]">Nossos Produtos</h2>
+        <section class="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center xl:w-277">
+          <article class="flex flex-col flex-wrap items-center md:w-92">
+            <div class="w-87 h-81"><img class="md:h-81" src="src/assets/cafe-tradicional.png" alt="Cafe tradicinal"></div>
+            <h3 class="font-medium text-[20px] text-marrom-escuro md:text-[28px]">Cafés Tradicionais</h3>
+          </article>
+          <article class="flex flex-col items-center md:w-92">
+             <div class="w-87 h-81"><img class="md:h-81" src="src/assets/cafe-especial.png" alt="Cafe especial"></div>
+             <h3 class="font-medium text-[20px] text-marrom-escuro pt-13 md:pt-0 md:text-[28px]">Cafés Especiais</h3>
+          </article>
+           <article class="flex flex-col items-center md:w-92">
+             <div class="w-87 h-81 flex items-center"><div><img src="src/assets/smoothies.png" alt="Cafe especial"></div></div>
+             <h3 class="font-medium text-[20px] text-marrom-escuro md:text-[28px]">Smoothies e Vitaminas</h3>
+          </article>
+           <article class="flex flex-col items-center md:w-92">
+             <div class="w-87 h-81 flex items-center xl:items-end"><div><img src="src/assets/paes.png" alt="Cafe especial"></div></div>
+             <h3 class="font-medium text-[20px] text-marrom-escuro md:text-[28px] xl:pt-15">Pães e Focaccias</h3>
+          </article>
+           <article class="flex flex-col items-center mt-10 md:w-92">
+             <div class="w-87 flex items-center"><div><img class="md:h-81" src="src/assets/bolocorte.png" alt="Cafe especial"></div></div>
+             <h3 class="font-medium text-[20px] text-marrom-escuro mt-20 md:text-[28px] md:mt-5">Doces</h3>
+          </article>
+          <article class="flex flex-col items-center mt-15 md:w-92">
+             <div class="w-87 flex items-center"><div><img class="md:h-81" src="src/assets/quiche.png" alt="Cafe especial"></div></div>
+             <h3 class="font-medium text-[20px] text-marrom-escuro mt-20 md:text-[28px] md:mt-0">Salgados</h3>
+          </article>
+        </section>
+      </section>
+
+         <section class="w-full">
+         <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="src/assets/CafeMobile.png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="src/assets/cafeMedio.png"
+          />
+          <img
+            src="src/assets/cafe-graos.png"
+            alt="banner-2"
+            class="w-full"
+          />
+        </picture>
+      </section>
+
+      <section class="my-20 flex justify-center xl:mt-24">
+          <section class="border border-cinza-prateado rounded-lg w-78 flex flex-col md:w-177 xl:w-194">
+            <h2 class="text-marrom-escuro font-semibold text-[28px] pl-7 pt-6 pb-8">Entre em contato!</h2>
+            <form class="flex flex-col items-center gap-6">
+              <input class="w-63 border border-cinza-claro rounded pl-3 md:w-163 xl:w-180 placeholder: py-1.5 text-cinza-medio" type="text" placeholder="Nome" id="" name="">
+              <input class="w-63 border border-cinza-claro rounded pl-3 md:w-163 xl:w-180 placeholder: py-1.5 text-cinza-medio" type="email" placeholder="Email" id="" name="">
+              <input class="w-63 border border-cinza-claro rounded pl-3 md:w-163 xl:w-180 placeholder: py-1.5 text-cinza-medio" type="tel" placeholder="Telefone" id="" name="">
+              <select class="pl-2 py-2 w-63 border border-cinza-claro rounded text-cinza-medio outline-none focus:ring-2 focus:ring-marrom-medio md:w-163 xl:w-180">
+            <option selected disabled>Preferência de contato</option>
+            <option>WhatsApp</option>
+            <option>E-mail</option>
+           </select>
+           <button class="mb-6 w-63 h-14 rounded text-white font-medium bg-marrom-medio md:w-163 xl:w-180" id="for__bnt">Enviar</button>
+            </form>
+          </section>
+      </section>
+    </main>
+    <footer class="bg-marrom-medio flex flex-col xl:flex-col-reverse" id="desebol__footer">
+           <section class="flex gap-8 justify-center mt-6 mb-2.5 md:mb-6 xl:mt-0">
+            <div><img src="src/assets/whats.png" alt="whatsApp"></div>
+            <div><img src="src/assets/insta.png" alt="instagram"></div>
+            <div><img src="src/assets/twitter.png" alt="twitter"></div>
+           </section>
+           <p class="text-white font-medium text-center mb-6 mx-7 xl:mt-6">2026 © Desenvolvido Wilner | Projeto fictício sem fins comerciais.</p>
+    </footer>
+  </body>
+</html>
